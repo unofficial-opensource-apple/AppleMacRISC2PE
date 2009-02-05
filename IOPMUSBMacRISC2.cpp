@@ -21,7 +21,10 @@
  */
 #include "IOPMUSBMacRISC2.h"
 
-#include <IOKit/IOLib.h>
+extern "C" {
+extern void kprintf(const char *, ...);
+}
+
 
 #define number_of_power_states 3
 
